@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    
+        <title>Navbar in Bootstrap4</title>
+    <style>
+    
+        hr{
+            color: black;
+        }
+           
+            .customDiv{
+        padding: 15px;
+        font-size: 18px;
+        min-height: 300px;
+        background-color:aliceblue;
+        margin-bottom: 10px;
+          box-shadow:  30px 0 30px #0004;      
+        } 
+        
+        
+        
+     
+        .footer{
+            background-color: black;
+            height:80px;
+            color: white;
+        }
+        
+        .customdiv2{
+            
+               padding: 15px;
+        font-size: 18px;
+        min-height: 300px;
+       
+            color:white;
+        }
+        .foot {
+            background-color:black;
+        }
+        .customdiv2 a{
+            color:#fff;
+        }
+        
+        .customdiv2 a:hover {
+            color: coral;
+        }
+        .nn:hover{
+          -webkit-transform: scale(1.2); 
+        }
+        
+     
+        
+  
+    </style>
+    
+ 
+</head>
+<body>
+
+    
+     <div class="container-fluid">
+
+            <nav class="navbar navbar-dark navbar-expand-sm bg-dark">
+            
+                <div class="col-md-4">
+                  <div class="navbar-nav navbar-left">
+                   <img class="img-rounded" src="img/6.PNG">
+                  
+                  
+                </div>
+                </div>
+                
+                
+        
+             <div class="col-md-8">
+            <button class="navbar-toggler" data-toggle="collapse"
+                    data-target="#responsiveNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="responsiveNavBar">
+                <ul class="navbar-nav navbar ml-auto">
+                    <li class="nav-item">
+                        <a  href="home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index1.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  href="login.html" class="nav-link">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+              
+    </nav>
+    </div>
+
+
+    
+    
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-4">
+      
+<!-- A vertical navbar -->
+       
+<nav class="navbar">
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link" href="#" ><img src="img/plane.png" height="20px" width="20px"> Flights </a>
+    </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#" ><img src="img/plane.png" height="20px" width="20px"> Hotels</a>
+    </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#" ><img src="img/plane.png" height="20px" width="20px"> Local</a>
+    </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#" ><img src="img/plane.png" height="20px" width="20px"> Trains</a>
+    </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#" ><img src="img/plane.png" height="20px" width="20px"> Flight Deals</a>
+    </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#" ><img src="img/plane.png" height="20px" width="20px"> Manage Trips</a>
+    </li>
+    
+    
+       
+  </ul>
+
+</nav>
+        
+        </div>
+        
+        <div class="col-md-8">
+            <h1>
+                Search Flights </h1>
+            
+            <h6>Flyanywhere Flyeverywhere </h6><br>
+        <div class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio">One way
+  </label>
+</div>
+<div class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio">Round trip
+  </label>
+</div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="optradio">Multi-city
+           </label>
+           </div><br><br>
+            
+            
+           
+            <form>
+                 <div class="row">
+                  <div class="col-md-6">
+  <div class="form-group">
+    
+    <label for="name"><b>From</b></label>
+                <input class="form-control bg-basic" type="text" id="name" placeholder="Any world wid city or flight">
+                      </div></div>
+                <div class="col-md-6">
+  <div class="form-group">
+    <label for="exampleInputPassword1"><b>To</b></label>
+    <input type="password" class="form-control bg-basic" id="exampleInputPassword1" placeholder="airport">
+                    </div></div></div>
+                
+                 <div class="row">
+           
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1"><b>Depart date</b></label>
+    <input type="date" class="form-control bg-basic" id="exampleInputPassword1" placeholder="airport">
+  </div>     
+                     </div></div>
+                
+                 <div class="row">
+           
+                <div class="col-md-4">
+                 <div class="form-group">
+               
+                     <label for="exampleInputPassword1"><b>Adult</b></label>
+    <input type="number" class="form-control bg-basic" id="exampleInputPassword1" placeholder="airport">
+                    </div>    </div>
+                     
+                 <div class="col-md-4">
+                 <div class="form-group">
+               
+    <label for="exampleInputPassword1"><b>Children</b></label>
+    <input type="number" class="form-control bg-basic" id="exampleInputPassword1" placeholder="airport">
+                     </div>     </div>
+                     
+                     <div class="col-md-4">
+                
+                 <div class="form-group">
+               
+    <label for="exampleInputPassword1"><b>infra</b></label>
+    <input type="number" class="form-control bg-basic" id="exampleInputPassword1" placeholder="airport">
+                         </div></div></div>  
+                
+                <a href="#"><b>More Otions:</b></a>
+<hr>
+                
+  <div class="row offset-8">
+     
+                
+                
+  <button type="submit" class="btn btn-warning">Serch flight</button>
+                </div>
+               
+</form>
+            
+
+       
+        
+        
+        </div>
+    </div>
+    
+        
+     <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-12">
+       
+        <h3>Do something fun</h3>
+        <p>All the best things to do this season.</p>
+         <div class="container-fluid">
+    <div class="row" >
+ <div class="col-md-3" >
+     <div class="card" style="width: 18rem;">
+         <a href="image.html"><img class="nn" class="card-img-top ims" src="img/9.PNG" ></a>
+  <div class="card-body">
+      <h3 class="card-title">Smashh</h3>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+     </div></div>
+     
+       
+     <div class="col-md-3" >
+                   <div class="card" style="width: 18rem;">
+      <img   class="card-img-top ims" src="img/18.PNG"   >
+               <div class="card-body">
+       <h3 class="card-title">ATV Bike Riding</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+              </div></div>
+        
+    <div class="col-md-3" >
+         <div class="card" style="width: 18rem;">
+      <img class="card-img-top ims" src="img/19.PNG" >
+             <div class="card-body">
+       <h3 class="card-title">Vineyard Tours</h3>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        </div></div>
+      
+    
+    
+     <div class="col-md-3" >
+         <div class="card" style="width: 18rem;">
+      <img class="card-img-top ims"  src="img/17.PNG" >
+                <div class="card-body">
+         <h3 class="card-title">Campaign</h3>
+                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+          </div>
+        </div>
+             </div></div>
+        
+        <br>
+      <h3>Grab a bite</h3>
+        <p>Where you should eat next.</p>
+    
+     <div class="container-fluid">
+    <div class="row">
+ <div class="col-md-3" >
+      <div class="card" style="width: 18rem;">
+      <img class="card-img-top ims"  src="img/13.PNG">
+            <div class="card-body">
+        <h3 class="card-title">Excursions</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div></div>
+       
+     <div class="col-md-3" >
+         <div class="card" style="width: 18rem;">
+      <img class="card-img-top ims"  src="img/14.PNG">
+               <div class="card-body">
+       <h3 class="card-title">Resort Day Outings</h3>
+                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+              </div></div>
+        
+                     
+    <div class="col-md-3" >
+         <div class="card" style="width: 18rem;">
+      <img class="card-img-top ims"  src="img/15.PNG">
+               <div class="card-body">
+        <h3 class="card-title">7D & 9D Cinemas</h3>
+                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+              </div></div>
+      
+    
+    
+     <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+      <img class="card-img-top ims"  src="img/16.PNG">
+                <div class="card-body">
+        <h3 class="card-title">Cycling</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+          </div>
+        </div>
+         </div></div>
+        
+        <br>
+       <div class="container">
+     <div class="row">
+        <div class="col-md-12">
+            <div class="mx-auto w-50 p-3  text-white text-center">
+                <button type="button" class="btn btn-primary">Explore more things to do in Bangalore</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    
+     <div class="container-fluid foot">
+    <div class="row">
+       <div class="col-lg-4">
+        <div class="customdiv2">
+         <a href="index.html">  <img src="img/6.PNG"> </a> 
+           
+           
+           
+           
+           </div>
+        </div> 
+        
+           <div class="col-lg-2">
+          <div class="customdiv2">
+              <h3> COMPANY </h3>
+            <a href="#">Careers</a><br>
+            <a href="#">About Us</a><br>
+            <a href="#">For Partners</a><br>
+            <a href="#">Terms</a><br>
+            <a href="#">Privacy Policy</a><br>
+            <a href="#">Contact Us</a><br>
+           
+           
+           
+           
+           </div>
+        
+        
+        </div> 
+        <div class="col-lg-2">
+          <div class="customdiv2">
+              <h3> BOOKING TICKETS </h3>
+         <a href="#">Hotels</a><br>
+         <a href="#">Flights</a><br>
+         <a href="#">Busses</a><br>
+         <a href="#">Ships</a><br>
+         <a href="#">Trains</a><br>
+         
+           
+           
+           
+           
+           </div>
+        
+        
+        </div> 
+        
+           <div class="col-lg-2">
+          <div class="customdiv2">
+              <h3>BUSINESS</h3>
+        <a href="#">India</a><br>
+        <a href="#">America</a><br>
+        <a href="#">Japan</a><br>
+        <a href="#">Australia</a><br>
+        <a href="#">Italy</a><br>
+        <a href="#">France</a><br>
+           
+           
+           
+           
+           </div>
+        
+        
+        </div> 
+           <div class="col-md-4 col-lg-2">
+          <div class="customdiv2">
+              <h3> FOLLOW</h3>
+<a href="#">Facebook</a><br>
+<a href="#">Twitter</a><br>
+<a href="#">LinkedIn</a><br>
+<a href="#">Google+</a><br>
+ <a href="#">Instagram</a><br>
+<a href="#">Pinterest</a><br>
+<a href="#">Youtube</a><br>
+           
+           
+           
+           </div>
+        
+        
+        </div> 
+        </div>
+    
+   
+   
+    
+     <!-- BODY ENDS -->
+<script src="bootstrap/js/fontawesome-all.js"></script>
+<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+ 
+      <link rel="stylesheet" href="bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>Contact</title>
+    <style>
+        .abc{
+            height:20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.9);
+        }
+    
+        .footer{
+            background-color: black;
+            height:80px;
+            color: white;
+        }
+        
+        .customdiv2{
+            
+               padding: 15px;
+        font-size: 18px;
+        min-height: 300px;
+       
+            color:white;
+        }
+        .foot {
+            background-color: lightcoral;
+        }
+        .customdiv2 a{
+            color:#fff;
+        }
+        
+        .customdiv2 a:hover {
+            color: black;
+        }
+        .top{
+            background-image: url(img/69.jpg);
+            opacity: 0.9;
+        }
+    </style>
+
+    
+</head>
+<body>
+<!--<div class="container-fluid"> -->
+   
+     <div class="container-fluid top">
+
+            <nav class="navbar navbar-dark navbar-expand-sm bg-dark">
+            
+                <div class="col-md-4">
+                  <div class="navbar-nav navbar-left">
+                   <img class="img-rounded" src="img/6.PNG">
+                  
+                  
+                </div>
+                </div>
+                
+                
+        
+             <div class="col-md-8">
+            <button class="navbar-toggler" data-toggle="collapse"
+                    data-target="#responsiveNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="responsiveNavBar">
+                <ul class="navbar-nav navbar ml-auto">
+                    <li class="nav-item">
+                        <a  href="home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index1.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  href="login.html" class="nav-link">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+              
+    </nav>
+    
+
+   
+<h3 class="text-center">GET A CLEAR TRIP ACCOUNT</h3>
+  
+<div class="container-fluid">
+     <div class="col-lg-6">
+    <hr class="abc">
+      <div class="row">
+      <div class="col-lg-6">
+    <div class="form-group">
+      <label for="usr">FIRST NAME</label>
+      <input type="text" class="form-control" id="usr" placeholder="FIRST NAME">
+    </div>
+      </div>
+      
+      
+      <div class="col-lg-6">
+    <div class="form-group">
+      <label for="pwd">LAST NAME</label>
+      <input type="password" class="form-control" id="pwd" placeholder="LAST NAME">
+    </div>
+      </div>      
+    </div>
+    
+      
+    <div class="row">
+        <div class="col-lg-6">
+    <div class="form-group">
+      <label for="pwd">MOBILE NUMBER</label>
+      <input type="password" class="form-control" id="pwd" palceholder="Ex:john">
+    </div>
+      </div>
+          
+    
+         <div class="col-lg-6">
+    <div class="form-group">
+      <label for="pwd">EMAIL ID</label>
+      <input type="text" class="form-control" id="pwd"  placeholder="newuser@gmail.com">
+    </div>
+      </div>
+    </div>
+             <div class="row">
+            <div class="col-lg-6">
+    <div class="form-group">
+      <label for="pwd">ENTER PASSWORD</label>
+      <input type="password" class="form-control" id="pwd" >
+    </div>
+      </div>
+    
+    
+     <div class="col-lg-6">
+    <div class="form-group">
+      <label for="pwd">CONFIRM PASSWORD</label>
+      <input type="password" class="form-control" id="pwd" >
+    </div>
+      </div>
+        </div>
+    
+             <div class="row">
+            <div class="col-md-6">
+                   <div class="form-group">
+                       <label for="pwd">--SELECT STATE--</label>
+             <select class="form-control" Id="pwd">
+             <option> TELANGANA</option>
+              <option> Mumbai</option>
+                 <option> chennai</option>
+                 <option> kolkata</option>
+                 <option> Banglore</option>
+             </select>
+             </div>
+                      </div>
+    
+    
+    
+     <div class="col-md-6">
+                   <div class="form-group">
+                        <label for="pwd">--SELECT CITY--</label>
+             <select class="form-control" Id="pwd">
+             <option> Hyderabad</option>
+              <option> Mumbai</option>
+                 <option> chennai</option>
+                 <option> kolkata</option>
+                 <option> Banglore</option>
+             </select>
+             </div>
+                      </div>
+    </div>
+   
+    
+    <p><b>Enter security code here</b></p>
+    
+    
+       
+        </div>
+         <input type="text" id="captcha" disabled/><br/><br/>
+<input type="text" id="inputText"/><br/><br/>
+    <input type="checkbox">I confirm that the information furnished above is true<br/><br/>
+<button onclick="generateCaptcha()" type="submit" class="btn btn-secondary">Refresh</button>
+<button onclick="check()" type="submit" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span>Submit</button>
+<body onload="generateCaptcha()">
+    </div></div>
+<script>
+var captcha;
+ 
+function generateCaptcha() {
+    var a = Math.floor((Math.random() * 10));
+    var b = Math.floor((Math.random() * 10));
+    var c = Math.floor((Math.random() * 10));
+    var d = Math.floor((Math.random() * 10));
+ 
+    captcha=a.toString()+b.toString()+c.toString()+d.toString();
+    
+    document.getElementById("captcha").value = captcha;
+}
+ 
+function check(){
+    var input=document.getElementById("inputText").value;
+ 
+    if(input==captcha){
+        alert("Equal");
+    }
+    else{
+        alert("Not Equal");
+    }
+}
+</script>
+ 
+
+ 
+
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1032534.3332500475!2d78.34344523904227!3d17.4135445707337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1537951358693" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+    
+    
+    
+
+    
+     <div class="container-fluid foot">
+    <div class="row">
+       <div class="col-lg-4">
+        <div class="customdiv2">
+         <a href="index.html">  <img src="img/6.PNG"> </a> 
+           
+           
+           
+           
+           </div>
+        </div> 
+        
+           <div class="col-lg-2">
+          <div class="customdiv2">
+              <h3> COMPANY </h3>
+            <a href="#">Careers</a><br>
+            <a href="#">About Us</a><br>
+            <a href="#">For Partners</a><br>
+            <a href="#">Terms</a><br>
+            <a href="#">Privacy Policy</a><br>
+            <a href="#">Contact Us</a><br>
+           
+           
+           
+           
+           </div>
+        
+        
+        </div> 
+        <div class="col-lg-2">
+          <div class="customdiv2">
+              <h3> BOOKING TICKETS </h3>
+         <a href="#">Hotels</a><br>
+         <a href="#">Flights</a><br>
+         <a href="#">Busses</a><br>
+         <a href="#">Ships</a><br>
+         <a href="#">Trains</a><br>
+         
+           
+           
+           
+           
+           </div>
+        
+        
+        </div> 
+        
+           <div class="col-lg-2">
+          <div class="customdiv2">
+              <h3>BUSINESS</h3>
+        <a href="#">India</a><br>
+        <a href="#">America</a><br>
+        <a href="#">Japan</a><br>
+        <a href="#">Australia</a><br>
+        <a href="#">Italy</a><br>
+        <a href="#">France</a><br>
+           
+           
+           
+           
+           </div>
+        
+        
+        </div> 
+           <div class="col-md-4 col-lg-2">
+          <div class="customdiv2">
+              <h3> FOLLOW</h3>
+<a href="#">Facebook</a><br>
+<a href="#">Twitter</a><br>
+<a href="#">LinkedIn</a><br>
+<a href="#">Google+</a><br>
+ <a href="#">Instagram</a><br>
+<a href="#">Pinterest</a><br>
+<a href="#">Youtube</a><br>
+           
+           
+           
+           </div>
+        
+        
+        </div> 
+        </div>
+    
+    
+    </div>
+    
+  
+    
+</body>
+</html>
